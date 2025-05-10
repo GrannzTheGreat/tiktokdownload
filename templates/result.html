@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hasil Download</title>
+    <title>Download Selesai</title>
 </head>
 <body>
-    <h1>Link Video TikTok</h1>
-    <p>URL: {{ url }}</p>
-    <!-- Di sini bisa diintegrasikan dengan script download sebenarnya -->
-    <a href="{{ url }}" target="_blank">Klik di sini untuk melihat video</a>
+    <h1>Video berhasil diunduh!</h1>
+    <a href="{{ url_for('static', filename=filename) }}" target="_blank">Klik di sini untuk melihat video</a>
 </body>
 </html>
